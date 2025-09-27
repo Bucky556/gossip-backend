@@ -1,0 +1,58 @@
+### Create Post
+POST http://localhost:7070/post/create
+Content-Type: application/json
+Accept-Language: RU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiNmQ5MzcxYTktYjEzYy00ZTFiLWJhMjctMmVjNTdhYjM0NzMwIiwiaWF0IjoxNzU4MTA0ODc0LCJleHAiOjE3NTgxOTEyNzR9.9iPMPVjmH20plaga2p80-eoQ7kRsYs930X0uQksfzqc
+
+{
+  "title": "2",
+  "content": "love her from bottom of my heart<<<<<<<<<3",
+  "photo": {
+    "id": "22964ba1-a571-4d43-afad-2a4a52f31a9d.png"
+  }
+}
+
+### Get Post List
+GET http://localhost:7070/post/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiNmQ5MzcxYTktYjEzYy00ZTFiLWJhMjctMmVjNTdhYjM0NzMwIiwiaWF0IjoxNzU3NzQ3NTc2LCJleHAiOjE3NTc4MzM5NzZ9.Ga7guNOF_x8A2yucI3Bpl1TIQcIVs60jAboy-9ybcbA
+
+### Get Post by ID
+GET http://localhost:7070/post/get/by-id/b85584e5-84fe-4a48-8225-bb424e20881d
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiNmQ5MzcxYTktYjEzYy00ZTFiLWJhMjctMmVjNTdhYjM0NzMwIiwiaWF0IjoxNzU3NDY0NjYxLCJleHAiOjE3NTc1NTEwNjF9.d2mVx_XtxVch7Usl6f-w6878PeLbUU8AhAma2iKUm8s
+
+### Update Post by ID
+PUT http://localhost:7070/post/update/e6764322-ec7f-4498-990d-87e64d9d0da8
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiNmQ5MzcxYTktYjEzYy00ZTFiLWJhMjctMmVjNTdhYjM0NzMwIiwiaWF0IjoxNzU4MTkzMzE0LCJleHAiOjE3NTgyNzk3MTR9.z1frNAPpLXXpOpL1m70ohXr1z1P9ZB2lVPNvFFlikzs
+
+{
+  "title": "CASCA<3",
+  "content": "Bu Giybat uzbekcha bulib Ronaldo uchun qilindi",
+  "photo": {
+    "id": "5c405dd7-f990-42e2-ae52-1ddf28067a7b.png"
+  }
+}
+
+### Delete Post by ID
+DELETE http://localhost:7070/post/delete/330a50b7-5275-4ff4-96e2-c9372efc0437
+Accept-Language: RU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiNmQ5MzcxYTktYjEzYy00ZTFiLWJhMjctMmVjNTdhYjM0NzMwIiwiaWF0IjoxNzU3NDY0NjYxLCJleHAiOjE3NTc1NTEwNjF9.d2mVx_XtxVch7Usl6f-w6878PeLbUU8AhAma2iKUm8s
+
+### Filter Post
+POST localhost:7070/post/filter
+Content-Type: application/json
+
+{
+    "query": "casca"
+}
+
+### Filter Admin Posts
+POST localhost:7070/post/admin/filter/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbmpvbkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUixST0xFX0FETUlOIiwiaWQiOiJiM2UzN2Y2YS0xYTczLTRjNGQtYjNiMi1lYzYxYTdmMWUwZjIiLCJpYXQiOjE3NTg2OTUwNTQsImV4cCI6MTc1ODc4MTQ1NH0.G_DD8drr_DeK19MTvWh6arDywFCEDoGHhLzV5zVH0M4
+
+{
+  "postQuery": null,
+  "profileQuery": null
+}

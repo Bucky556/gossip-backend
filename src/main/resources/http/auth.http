@@ -1,0 +1,63 @@
+### Registration
+POST http://localhost:7070/auth/registration
+Content-Type: application/json
+Accept-Language: UZ
+
+{
+  "name": "Nodirjon",
+  "username": "nodiroqilov86@gmail.com",
+  "password": "123",
+  "confirmPassword": "123"
+}
+
+### Registration Verification by Email
+GET http://localhost:7070/auth/registration/email-verification/
+
+### Registration Verification by SMS
+POST http://localhost:7070/auth/registration/sms-verification
+Content-Type: application/json
+Accept-Language: EN
+
+{
+  "phone": "998883419505",
+  "code": "2389"
+}
+
+### Registration Verification By SMS resend
+POST localhost:7070/auth/registration/sms-verification/resend
+Content-Type: application/json
+Accept-Language: RU
+
+{
+  "phone": "998883419505"
+}
+
+### Reset Password
+POST localhost:7070/auth/reset/password
+Content-Type: application/json
+Accept-Language: RU
+
+{
+  "username": "okilovnodir456@gmail.com"
+}
+
+### Change Password With Code
+POST localhost:7070/auth/reset/password/confirm
+Content-Type: application/json
+Accept-Language: EN
+
+{
+  "username": "okilovnodir456@gmail.com",
+  "confirmCode": "6523",
+  "newPassword": "12345"
+}
+
+### Login
+POST http://localhost:7070/auth/login
+Content-Type: application/json
+Accept-Language: UZ
+
+{
+  "username": "adminjon@gmail.com",
+  "password": "123"
+}

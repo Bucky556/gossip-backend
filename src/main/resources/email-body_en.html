@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Confirmation</title>
+    <style>
+        .link-button {
+            padding: 10px 15px;
+            background-color: green;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>Hello, {{name}}!</h2>
+<p>Thank you for registering. Please confirm your email by clicking the button below:</p>
+<a href="{{domain}}/auth/registration/email-verification/{{profileId}}" class="link-button">
+    Verify Email
+</a>
+</body>
+</html>

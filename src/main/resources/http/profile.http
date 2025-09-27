@@ -1,0 +1,75 @@
+### Update Name
+PUT localhost:7070/profile/update/name
+Content-Type: application/json
+Accept-Language: RU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiZDZkZmFiZTUtMjM3OS00YTg0LTg0ZmEtNmVkNWMzZDU1NjI0IiwiaWF0IjoxNzU2MjY0NzIzLCJleHAiOjE3NTYzNTExMjN9.ojCS52kwrQCsNpa70iuq9MJ8KUMeq490AunHkKKQE_c
+
+{
+  "name": "Nodir"
+}
+
+### Update Password
+PUT localhost:7070/profile/update/password
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiZDZkZmFiZTUtMjM3OS00YTg0LTg0ZmEtNmVkNWMzZDU1NjI0IiwiaWF0IjoxNzU2MjY0NzIzLCJleHAiOjE3NTYzNTExMjN9.ojCS52kwrQCsNpa70iuq9MJ8KUMeq490AunHkKKQE_c
+
+{
+  "currentPassword": "009999",
+  "newPassword": "123"
+}
+
+### Send code for Update Username
+PUT localhost:7070/profile/update/username
+Content-Type: application/json
+Accept-Language: RU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiNjZhYTg0M2MtZWU2Ni00N2QyLWFiMjQtZDk2ZTEzZjcwYzIwIiwiaWF0IjoxNzU2NjQwNzU3LCJleHAiOjE3NTY3MjcxNTd9.Qdy8pxZlN-r2YY11J9-65PCecgRLhA79lubO4CXZa2A
+
+{
+  "username": "nodiroqilov86@gmail.com"
+}
+
+### Confirm code for Update Username
+PUT localhost:7070/profile/update/username/confirm
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiNjZhYTg0M2MtZWU2Ni00N2QyLWFiMjQtZDk2ZTEzZjcwYzIwIiwiaWF0IjoxNzU2NjQwNzU3LCJleHAiOjE3NTY3MjcxNTd9.Qdy8pxZlN-r2YY11J9-65PCecgRLhA79lubO4CXZa2A
+
+{
+  "code": "6576"
+}
+
+### Update Photo
+PUT localhost:7070/profile/update/photo
+Content-Type: application/json
+Accept-Language: RU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiMDFmY2U2ZmQtYWM5NS00NmQzLWI2NjYtZDllZTAyYjkwYmMyIiwiaWF0IjoxNzU2ODY1Njc3LCJleHAiOjE3NTY5NTIwNzd9.WFOEMvWqHlXmi1j8gHA6BIUfK1HpbN15_WCRl6kHTm4
+
+{
+  "photoId": "8e90a6d2-0d04-4474-89d1-b3cf20f1a16c.jpeg"
+}
+
+### Filter Profiles
+POST localhost:7070/profile/filter
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbmpvbkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUixST0xFX0FETUlOIiwiaWQiOiJiM2UzN2Y2YS0xYTczLTRjNGQtYjNiMi1lYzYxYTdmMWUwZjIiLCJpYXQiOjE3NTg1NjI5NTgsImV4cCI6MTc1ODY0OTM1OH0.a5KTClboZUKaTFVg4UB8aEUILDsUZrQtG1nD2iMjKAI
+
+{
+  "query": "admin"
+}
+
+### Change status by Admins
+PUT localhost:7070/profile/status/b2d4f6e8-45c6-45b5-86ad-0cc35b7bae4a
+Content-Type: application/json
+Accept-Language: RU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbmpvbkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUixST0xFX0FETUlOIiwiaWQiOiJiM2UzN2Y2YS0xYTczLTRjNGQtYjNiMi1lYzYxYTdmMWUwZjIiLCJpYXQiOjE3NTg1NjI5NTgsImV4cCI6MTc1ODY0OTM1OH0.a5KTClboZUKaTFVg4UB8aEUILDsUZrQtG1nD2iMjKAI
+
+{
+  "status": "ACTIVE"
+}
+
+### Delete Profile by Admin
+DELETE localhost:7070/profile/delete/b2d4f6e8-45c6-45b5-86ad-0cc35b7bae4a
+Content-Type: application/json
+Accept-Language: RU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbmpvbkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUixST0xFX0FETUlOIiwiaWQiOiJiM2UzN2Y2YS0xYTczLTRjNGQtYjNiMi1lYzYxYTdmMWUwZjIiLCJpYXQiOjE3NTg1NjI5NTgsImV4cCI6MTc1ODY0OTM1OH0.a5KTClboZUKaTFVg4UB8aEUILDsUZrQtG1nD2iMjKAI

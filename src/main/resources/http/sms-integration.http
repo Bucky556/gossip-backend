@@ -1,0 +1,20 @@
+### Login sms
+POST https://notify.eskiz.uz/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "okilovnodir456@gmail.com",
+  "password": "okQPbXH5qRJdM2dCAyI1PYTUZmkcbUCzBy14UoiP"
+}
+
+### Send sms
+POST https://notify.eskiz.uz/api/message/sms/send
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc1MDM3MzQsImlhdCI6MTc1NDkxMTczNCwicm9sZSI6InRlc3QiLCJzaWduIjoiNTBjYWJiNWZiZTMzZDBjNjQxZDM1N2QzZmExOTRlZmI5MWRhNzIzNTAxMGNjZTg5M2Q5ODUwMWNjNmVlZTEwZSIsInN1YiI6IjEyMTEwIn0.BNvBs17Zx2h2iL5lc_U-AMZGny74mrHYTZtT-94E7MU
+
+{
+  "mobile_phone": "998883419505",
+  "message":"- Это тест от Eskiz",
+  "from": "4546"
+
+}

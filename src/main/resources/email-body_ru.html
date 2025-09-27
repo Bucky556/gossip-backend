@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Подтверждение регистрации</title>
+    <style>
+        .link-button {
+            padding: 10px 15px;
+            background-color: green;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>Здравствуйте, {{name}}!</h2>
+<p>Спасибо за регистрацию. Пожалуйста, подтвердите ваш email, нажав на кнопку ниже:</p>
+<a href="{{domain}}/auth/registration/email-verification/{{profileId}}" class="link-button">
+    Подтвердить Email
+</a>
+
+</body>
+</html>

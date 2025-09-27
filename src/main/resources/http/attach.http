@@ -1,0 +1,13 @@
+### Upload attach
+POST http://localhost:7070/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundry
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiNmQ5MzcxYTktYjEzYy00ZTFiLWJhMjctMmVjNTdhYjM0NzMwIiwiaWF0IjoxNzU3NDE5NTA5LCJleHAiOjE3NTc1MDU5MDl9.upA7_cTvJpV81X_X4XLSvEIeD20-zvmREvOM26QlKSw
+
+--WebAppBoundry
+Content-Disposition: form-data; name="file"; filename="mazgi_rasm.png"
+
+/Users/nodirjonokilov/Desktop/Files/mazgi_rasm.png
+
+### Open attach
+GET http://localhost:7070/attach/open/d1db2a10-50ca-4769-8c7d-7e8953853cf2.png
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJva2lsb3Zub2RpcjQ1NkBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlkIjoiMDFmY2U2ZmQtYWM5NS00NmQzLWI2NjYtZDllZTAyYjkwYmMyIiwiaWF0IjoxNzU2ODY1Njc3LCJleHAiOjE3NTY5NTIwNzd9.WFOEMvWqHlXmi1j8gHA6BIUfK1HpbN15_WCRl6kHTm4

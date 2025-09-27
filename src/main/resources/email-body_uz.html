@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registratsiyani tastidlash</title>
+    <style>
+        .link-button {
+            padding: 10px 15px;
+            background-color: green;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>Assalomu alaykum, {{name}}!</h2>
+<p>Ro‘yxatdan o‘tganingiz uchun rahmat. Iltimos, emailingizni tasdiqlash uchun quyidagi tugmani bosing:</p>
+<a href="{{domain}}/auth/registration/email-verification/{{profileId}}" class="link-button">
+    Emailni tasdiqlash
+</a>
+</body>
+</html>

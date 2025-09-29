@@ -1,9 +1,15 @@
 # Gossip Backend
 
-![Backend Image](./images/Gossip.png)  <!-- Add a backend screenshot here -->
+![Backend Image](./images/Gossip.png)
 
 ## Overview
 Gossip Backend is a RESTful API server that manages user registration, login, and posts. It is built using Spring Boot, Spring Security, and JWT authentication.
+
+## Developer's focus
+This project was mainly developed to practice and demonstrate my backend development skills.
+I focused on building a clean, secure, and scalable backend system with Spring Boot, JWT authentication, and PostgreSQL.
+
+The frontend part was implemented as a minimal UI to test and interact with the APIs. While the design is simple, it fully demonstrates the integration with the backend.
 
 ## Features
 - User registration and login (JWT-based)

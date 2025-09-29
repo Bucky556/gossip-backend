@@ -43,4 +43,4 @@ Gossip Backend is a RESTful API server that manages user registration, login, an
 - Update src/main/resources/application.properties with your DB username & password
 ```bash
 
-git clone https://github.com/Bucky556/gossip-backend.git
+git clone https://github.com/Bucky556/gossip-project-Backend-.git
